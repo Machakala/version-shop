@@ -54,9 +54,9 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, '/1.0/build/index.html'))
 );
 
-app.get('/', (req, res) => {
-  res.send('server is runing by hamzy up and runinWIg');
-});
+//app.get('/', (req, res) => {
+//  res.send('server is runing by hamzy up and runinWIg');
+// });
 app.use((err, req, res, next) => {
   res.status(501).send({ message: err.message });
 });
